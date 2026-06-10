@@ -373,7 +373,7 @@ for k in range(2, 5):
     score = silhouette_score(X_train_scaled, clusters_temp)
     scores.append((k, score))
 best_k= max(scores, key=lambda x: x[1])[0]
-print(f"Mejor número de clusters: {best_k}")
+print(f"The best cluster is: {best_k}")
 
 # final model
 kmeans = KMeans(n_clusters=best_k, random_state=42, n_init=10)
