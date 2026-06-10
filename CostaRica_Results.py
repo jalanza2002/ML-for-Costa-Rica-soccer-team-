@@ -24,7 +24,7 @@ import time
 
 print("\n loading dataset....")
 
-df=pd.read_csv("results.csv", sep=",")
+df=pd.read_csv("jalanza2002/ML-for-Costa-Rica-soccer-team-/results.csv", sep=",")
 
 print("\n print the matches from costa rica....")
 print(df[df["home_team"]=="Costa Rica"])
